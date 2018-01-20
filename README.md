@@ -28,6 +28,7 @@ The v2 Forums app has all of the same features as the website. You are able to l
 ### Updates Coming Soon
 - Hopefully a fix for the mobile/desktop bug.
 - Automatic updates (refresh function)
+- Support for notifications
 - App store app if approved by v2!
 - And more!
 
