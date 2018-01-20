@@ -47,6 +47,7 @@
 		1EDE5A2A200B20C800F6315A /* v2 ForumsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "v2 ForumsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EDE5A2E200B20C800F6315A /* v2_ForumsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = v2_ForumsUITests.swift; sourceTree = "<group>"; };
 		1EDE5A30200B20C800F6315A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EDE5A3C200B212000F6315A /* v2 Forums.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "v2 Forums.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		1EDE5A0D200B20C800F6315A /* v2 Forums */ = {
 			isa = PBXGroup;
 			children = (
+				1EDE5A3C200B212000F6315A /* v2 Forums.entitlements */,
 				1EDE5A0E200B20C800F6315A /* AppDelegate.swift */,
 				1EDE5A10200B20C800F6315A /* ViewController.swift */,
 				1EDE5A12200B20C800F6315A /* Main.storyboard */,
@@ -194,6 +196,11 @@
 					1EDE5A0A200B20C800F6315A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					1EDE5A1E200B20C800F6315A = {
 						CreatedOnToolsVersion = 9.2;
@@ -429,11 +436,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EB2C97N4L7;
 				INFOPLIST_FILE = "v2 Forums/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Omicron-Labs.v2-Forums";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -444,11 +452,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EB2C97N4L7;
 				INFOPLIST_FILE = "v2 Forums/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Omicron-Labs.v2-Forums";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
