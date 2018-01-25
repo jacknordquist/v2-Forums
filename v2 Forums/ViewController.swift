@@ -19,9 +19,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
        
-        // App currently has a bug requiring "Mobile View" to be tapped in the app - issue with website itself.
-        var request = URLRequest(url: URL(string: website)!)
-        request.addValue("Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1", forHTTPHeaderField: "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1")
+        let request = URLRequest(url: URL(string: website)!)
         super.viewDidLoad()
 
         
@@ -34,5 +32,3 @@ class ViewController: UIViewController {
 
 
 }
-
-// UserAgent value = "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1"
